@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-image: url("download.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container form {
+
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container form label {
+            margin-bottom: 10px;
+        }
+
+        .container form input {
+            padding: 5px;
+            margin-bottom: 10px;
+            width: 200px;
+        }
+
+        .container form input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+
+
+        .Products {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .Products h1 {
+            margin-bottom: 20px;
+        }
+
+        .Products ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .Products ul li {
+            margin-right: 20px;
+        }
+
+        .Products ul li:first-child {
+            margin-left: 0px;
+        }
+
+        .Products ul li img {
+            height: 200px;
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .h1 {
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="get">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Name">
+            <label for="city">City:</label>
+            <input type="text" placeholder="City">
+            <label for="Pincode">Pincode:</label>
+            <input type="number" placeholder="Pincode"><br>
+            <input type="submit" value="Search">
+        </form>
+    </div>
+    <section class="Products">
+        <h1>Products</h1>
+        <ul>
+            <li><img src="hero-bg.jpg" alt=""></li>
+            <li><img src="hero-bg.jpg" alt=""></li>
+            <li><img src="hero-bg.jpg" alt=""></li>
+            <li><img src="hero-bg.jpg" alt=""></li>
+        </ul>
+        <input type="submit" value="Show more">
+    </section>
+    <h1 class="h1">Test done</h1>
+</body>
+
+</html>
